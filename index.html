@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espacio Verde — Plantas, tierra y vida para tu hogar</title>
+  <meta name="description" content="Un lugar cercano donde encuentras plantas, sustratos y elementos esenciales para cuidar tu jardín y llenar tu hogar de vida.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================
+       HEADER
+  =============================== -->
+  <header class="header" id="header">
+    <div class="header__container">
+
+      <div class="header__brand">
+        <a href="#hero" class="header__name">Espacio Verde</a>
+        <span class="header__descriptor">Plantas, tierra y vida para tu hogar</span>
+      </div>
+
+      <nav class="header__nav" id="headerNav">
+        <a href="#hero" class="header__nav-link">Inicio</a>
+        <a href="#info" class="header__nav-link">Encuéntranos</a>
+        <a href="#cta-final" class="header__nav-link">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://wa.me/573005171856?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Espacio%20Verde" class="header__cta btn btn--sm">Escríbenos</a>
+        <button class="header__menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================
+       HERO
+  =============================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="assets/hero_image.jpg" alt="Plantas ornamentales y herramientas de jardinería en Espacio Verde" class="hero__img" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__container">
+      <div class="hero__content">
+        <span class="hero__tag">Desde 2017</span>
+        <h1 class="hero__title">Todo lo que necesitas para darle vida a tus espacios</h1>
+        <p class="hero__desc">Un lugar cercano donde encuentras plantas, sustratos y elementos esenciales para cuidar tu jardín y llenar tu hogar de vida.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/573005171856?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20Espacio%20Verde" class="btn btn--primary">Escríbenos por WhatsApp</a>
+          <a href="https://maps.google.com/?q=Jardin+Botanico+de+Medellin" class="btn btn--outline">Cómo llegar</a>
+        </div>
+        <p class="hero__schedule">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Lun–Sáb: 8am – 5pm
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       ENCUÉNTRANOS
+  =============================== -->
+  <section class="info" id="info">
+    <div class="info__container">
+      <h2 class="info__title">Encuéntranos</h2>
+
+      <div class="info__layout">
+
+        <!-- Columna izquierda: datos -->
+        <div class="info__data">
+
+          <!-- Dirección -->
+          <div class="info__group">
+            <div class="info__group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="info__group-body">
+              <h3 class="info__group-title">Dirección</h3>
+              <p class="info__group-text">
+                Calle 73 #51D-14<br>
+                Sector Jardín Botánico<br>
+                Medellín, Colombia
+              </p>
+            </div>
+          </div>
+
+          <!-- Horario -->
+          <div class="info__group">
+            <div class="info__group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="info__group-body">
+              <h3 class="info__group-title">Horario</h3>
+              <p class="info__group-text info__group-text--schedule">Lunes a Viernes: 8:00 a.m. – 5:00 p.m.
+Sábados: 9:00 a.m. – 2:00 p.m.
+Domingos: Cerrado</p>
+            </div>
+          </div>
+
+          <!-- Contacto -->
+          <div class="info__group">
+            <div class="info__group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="info__group-body">
+              <h3 class="info__group-title">Contacto</h3>
+              <div class="info__contacts">
+                <a href="https://wa.me/573005171856" class="info__contact-link">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.347 0-4.518-.802-6.237-2.147l-.364-.303-3.176 1.064 1.064-3.176-.303-.364A9.958 9.958 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+                  WhatsApp
+                </a>
+                <a href="tel:300 123 4567" class="info__contact-link">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  300 123 4567
+                </a>
+                <a href="mailto:hola@espacioverde.co" class="info__contact-link">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  hola@espacioverde.co
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón cómo llegar -->
+          <a href="https://maps.google.com/?q=Jardin+Botanico+de+Medellin" class="btn btn--primary info__btn-map" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Cómo llegar
+          </a>
+
+        </div>
+
+        <!-- Columna derecha: mapa -->
+        <div class="info__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9571914545295!2d-75.56742988874794!3d6.2693604936931155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428e80e411f91%3A0x142ab912fdb68353!2zSmFyZMOtbiBCb3TDoW5pY28gZGUgTWVkZWxsw61u!5e0!3m2!1sen!2sco!4v1775246495615!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CTA FINAL
+  =============================== -->
+  <section class="cta-final" id="cta-final">
+    <div class="cta-final__container">
+      <h2 class="cta-final__title">¿Quieres saber más?</h2>
+      <p class="cta-final__text">Escríbenos por WhatsApp o visítanos. Estaremos encantados de ayudarte a elegir lo que mejor se adapte a tu espacio.</p>
+      <div class="cta-final__actions">
+        <a href="https://wa.me/573005171856?text=Hola%2C%20quiero%20asesor%C3%ADa%20de%20Espacio%20Verde" class="btn btn--primary btn--lg">Escribir por WhatsApp</a>
+        <a href="https://maps.google.com/?q=Jardin+Botanico+de+Medellin" class="btn btn--outline-light">Ver ubicación</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  =============================== -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__name">Espacio Verde</span>
+          <span class="footer__descriptor">Plantas, tierra y vida para tu hogar</span>
+        </div>
+
+        <div class="footer__details">
+          <p>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Sector Jardín Botánico, Medellín
+          </p>
+          <p>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Lun–Sáb: 8am – 5pm
+          </p>
+          <p>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            300 123 4567
+          </p>
+        </div>
+
+        <div class="footer__social">
+          <a href="https://instagram.com/espacioverde.co" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/espacioverdemedellin" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="currentYear">2026</span> Espacio Verde. Todos los derechos reservados.</p>
+        <p class="footer__credit">
+          Desarrollado por
+          <a href="https://wa.me/573005171856" target="_blank" rel="noopener">Step Up Business Solutions</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
